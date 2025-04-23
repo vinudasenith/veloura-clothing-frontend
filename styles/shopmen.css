@@ -1,12 +1,3 @@
-/* ===== Global Styles ===== */
-body {
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #f9f9f9;
-    color: #333;
-    padding-top: 60px;
-}
-
 /* Main header layout */
 /* Base Header Styling */
 .header {
@@ -18,6 +9,7 @@ body {
     border-bottom: 1px solid #e0e0e0;
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 /* Left: Contact & Language */
@@ -120,103 +112,6 @@ body {
     color: #efff09;
     transform: scale(1.1);
 }
-
-/* ===== Banner Section ===== */
-.head-banner img,
-.gym-banner img {
-    width: 110%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 10px;
-    margin-bottom: 50px;
-}
-
-.gym-banner {
-    text-align: center;
-    padding: 40px 40px 10px;
-    background-color: #fff;
-}
-
-/* ===== New Collection Section ===== */
-.new-collection {
-    text-align: center;
-}
-
-
-.new-collection p {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 50px;
-}
-
-.new-collection-img {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-}
-
-.new-collection-img img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    transition: transform 0.3s;
-
-}
-
-.new-collection-img img:hover {
-    transform: scale(1.02);
-}
-
-.featured-collection {
-    text-align: center;
-}
-
-/* Style for text under images */
-
-.featured-collection-img {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-}
-
-
-.featured-collection p {
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 50px;
-}
-
-/* Image styles */
-.featured-collection-img img {
-    width: 110%;
-    height: 500px;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-
-.featured-collection-img p {
-    font-size: 18px;
-    font-family: sans-serif;
-    color: #000000;
-
-}
-
-div span {
-    display: block;
-    max-width: 400px;
-    line-height: 1.6;
-    text-align: left;
-    white-space: normal;
-    overflow: hidden;
-}
-
 
 /* Footer base styles */
 .site-footer {
@@ -325,43 +220,187 @@ div span {
 }
 
 
-.slider-container {
+/* Sidebar becomes a horizontal bar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* "Filter by" heading */
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* Horizontal container for h3 titles */
+.filter-headings {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.filter-headings h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* Main filters arranged in horizontal row */
+.sidebar>.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s ease;
+}
+
+.sidebar>.filter-group:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Label styling */
+.filter-group label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    max-width: 1100px;
-    margin: auto;
+    gap: 6px;
 }
 
-.slider-btn {
-    background-color: #111;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    border: none;
+/* Input styles */
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+    accent-color: #222;
     cursor: pointer;
-    z-index: 10;
 }
 
-.slider-track-wrapper {
-    overflow: hidden;
-    width: 1100px;
-    position: relative;
-
+/* Dropdown styling */
+.filter-group select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-.slider-track {
+/* Wrap filter groups horizontally */
+.sidebar {
     display: flex;
-    transition: transform 0.4s ease-in-out;
-    will-change: transform;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .sidebar h2 {
+        width: 100%;
+    }
+
+    .filter-group {
+        min-width: 150px;
+        flex: 1;
+    }
 }
 
 
-.slider-track img {
-    width: 270px;
-    height: auto;
-    margin-right: 10px;
+.men-clothing-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 20px;
+}
+
+/* Style for each item */
+.each-clothing {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.each-clothing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+
+/* Center image and fix size */
+.each-clothing img {
+    display: block;
+    margin: 0 auto 12px;
+    width: 100%;
+    height: 300px;
+
     object-fit: cover;
-    margin-bottom: 50px;
+
+
+}
+
+
+/* Text styling */
+.clothing-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.color,
+.fit,
+.price {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: left;
+    margin: 2px 0;
+}
+
+.price {
+    font-weight: 600;
+    color: #000000;
+    /* warm orange tone */
+    font-size: 1.05rem;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .men-clothing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .men-clothing {
+        grid-template-columns: 1fr;
+    }
 }
