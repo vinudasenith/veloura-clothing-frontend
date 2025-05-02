@@ -1,0 +1,97 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.about-hero {
+    background-image: url('images/about/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #000000;
+    padding: 100px 20px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-values {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-values h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.value-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    flex: 1;
+    min-width: 240px;
+}
+
+.value-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.value-box p {
+    font-size: 0.95rem;
+}
