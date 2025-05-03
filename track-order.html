@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloura-Home</title>
+    <link rel="stylesheet" href="styles/track-order.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+</head>
+
+<body>
+    <div class="container-all">
+        <!-- Navigation bar first -->
+        <nav class="navbar">
+            <div class="nav-icon-start">
+                <a href="login.html" title="Sign In"><i class="fas fa-user"></i></a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                <li><a href="collections.html">COLLECTIONS</a></li>
+                <li><a href="shopmen.html">SHOP MEN</a></li>
+                <li><a href="shopwomen.html">SHOP WOMEN</a></li>
+                <li><a href="sportswear.html">SPORTSWEAR</a></li>
+                <li><a href="accessories.html">ACCESSORIES</a></li>
+
+
+            </ul>
+            <div class="nav-icon-end">
+                <a href="cart.html" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+
+        <!-- Then your main header content -->
+        <div class="header">
+            <div class="heading1">
+                <p>Customer service +94 77 898 3956</p>
+                <img src="images/english.jpeg" alt="language">
+            </div>
+            <div class="heading2">
+                <p id="shipping">FREE SHIPPING ON ORDERS OVER $100</p>
+            </div>
+            <div class="heading3">
+                <img src="images/logo.png" alt="logo">
+                <p id="clothing-name">VELOURA</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="track-hero">
+        <div class="track-order-container">
+            <h1>Track Your Order</h1>
+            <p>Enter your Order ID and Email to check the current status.</p>
+        </div>
+    </section>
+
+    <section class="track-form-section">
+        <div class="track-order-container">
+            <form id="trackForm">
+                <label for="orderId">Order ID</label>
+                <input type="text" id="orderId" placeholder="e.g. #VEL123456" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+
+                <button type="submit">Track Order</button>
+                <p class="form-msg" id="formMsg"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="track-status hidden" id="statusSection">
+        <div class="track-order-container">
+            <h2>Order Status</h2>
+            <ul class="status-steps">
+                <li class="active">Order Placed</li>
+                <li class="active">Processing</li>
+                <li class="active">Shipped</li>
+                <li>Out for Delivery</li>
+                <li>Delivered</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About VELOURA</h4>
+                <p>Your destination for premium fashion and activewear.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="angel-club.html">Angel Club</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="www.facebook.com"><img src="images/fb.avif" alt="Facebook"></a>
+                    <a href="www.instagram.com"><img src="images/twitter.webp" alt="twitter"></a>
+                    <a href="www.youtube.com"><img src="images/yt.webp" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VELOURA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/track.js"></script>
+</body>
+
+</html>
