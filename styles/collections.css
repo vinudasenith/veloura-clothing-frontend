@@ -1,0 +1,109 @@
+/* Base styles */
+.collections {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.collections-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Grid layout */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.collection-item {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.collection-label {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.collection-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* New Trending overlay */
+.collection-item::after {
+    content: "Now Trending";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Show on hover */
+.collection-item:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Label below image remains */
+.collection-label {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}

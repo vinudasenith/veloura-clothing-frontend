@@ -1,0 +1,110 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.heading2 p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #f3e7e9, #e3eeff);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #1e1e1e;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.how-it-works h2,
+.rewards-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.steps-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.step-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.step-box:hover {
+    transform: translateY(-6px);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    color: #cc3366;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reward-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card:hover {
+    border-color: #cc3366;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(204, 51, 102, 0.1);
+}
+
+.rewards-section.alt {
+    background-color: #fef6f9;
+}
