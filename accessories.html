@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veloura-Home</title>
@@ -14,7 +15,29 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-all">
+        <!-- Navigation bar first -->
+        <nav class="navbar">
+            <div class="nav-icon-start">
+                <a href="login.html" title="Sign In"><i class="fas fa-user"></i></a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                <li><a href="collections.html">COLLECTIONS</a></li>
+                <li><a href="shopmen.html">SHOP MEN</a></li>
+                <li><a href="shopwomen.html">SHOP WOMEN</a></li>
+                <li><a href="sportswear.html">SPORTSWEAR</a></li>
+                <li><a href="accessories.html">ACCESSORIES</a></li>
+
+
+            </ul>
+            <div class="nav-icon-end">
+                <a href="cart.html" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+
+        <!-- Then your main header content -->
         <div class="header">
             <div class="heading1">
                 <p>Customer service +94 77 898 3956</p>
@@ -29,54 +52,36 @@
             </div>
         </div>
 
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">NEW ARRIVALS</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="shopmen.html">SHOP MEN</a></li>
-                <li><a href="shopwomen.html">SHOP WOMEN</a></li>
-                <li><a href="sportswear.html">SPORTSWEAR</a></li>
-                <li><a href="accessories.html">ACCESORIES</a></li>
-                <li><a href="#">LOOKBOOK</a></li>
-                <li><a href="#">ANGEL CLUB</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
-        </nav>
         <div class="sidebar">
             <h2>Filter by</h2>
-            <!-- Keep these sections but REMOVE the <h3> inside -->
+
             <div class="filter-group">
-                <h3>Availability</h3>
-                <label><input type="checkbox"> In Stock</label>
-                <label><input type="checkbox"> Out of Stock</label>
+                <label><input type="checkbox" name="availability" value="in-stock"> In Stock</label>
+                <label><input type="checkbox" name="availability" value="out-of-stock"> Out of Stock</label>
             </div>
 
             <div class="filter-group">
-                <h3>Price</h3>
-                <label><input type="radio" name="price"> Under $50</label>
-                <label><input type="radio" name="price"> $50 - $100</label>
-                <label><input type="radio" name="price"> Over $100</label>
+                <label><input type="radio" name="price" value="under-50"> Under $50</label>
+                <label><input type="radio" name="price" value="50-100"> $50 - $100</label>
+                <label><input type="radio" name="price" value="over-100"> Over $100</label>
             </div>
 
             <div class="filter-group">
-                <h3>Color</h3>
-                <label><input type="checkbox"> Black</label>
-                <label><input type="checkbox"> White</label>
-                <label><input type="checkbox"> Blue</label>
-                <label><input type="checkbox"> Red</label>
-                <label><input type="checkbox"> Green</label>
+                <label><input type="checkbox" name="color" value="black"> Black</label>
+                <label><input type="checkbox" name="color" value="white"> White</label>
+                <label><input type="checkbox" name="color" value="blue"> Blue</label>
+                <label><input type="checkbox" name="color" value="red"> Red</label>
+                <label><input type="checkbox" name="color" value="green"> Green</label>
             </div>
 
             <div class="filter-group">
-                <h3>Gender</h3>
-                <label><input type="radio" name="gender"> Men</label>
-                <label><input type="radio" name="gender"> Unisex</label>
+                <label><input type="radio" name="gender" value="men"> Men</label>
+                <label><input type="radio" name="gender" value="unisex"> Unisex</label>
             </div>
 
             <div class="filter-group">
-                <select>
-                    <h3>Sort by</h3>
+                <label for="sortSelect">Sort by</label>
+                <select id="sortSelect">
                     <option value="popular">Most Popular</option>
                     <option value="price-low-high">Price: Low to High</option>
                     <option value="price-high-low">Price: High to Low</option>
@@ -84,6 +89,7 @@
                 </select>
             </div>
         </div>
+
 
 
         <div class="access-collection">
@@ -155,43 +161,54 @@
 
             <footer class="site-footer">
                 <div class="footer-container">
+                    <!-- About Section -->
                     <div class="footer-column">
                         <h4>About VELOURA</h4>
                         <p>Your destination for premium fashion and activewear.</p>
                     </div>
+
+                    <!-- Shop Section -->
                     <div class="footer-column">
                         <h4>Shop</h4>
                         <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="#">NEW ARRIVALS</a></li>
-                            <li><a href="#">COLLECTIONS</a></li>
-                            <li><a href="#">LOOKBOOK</a></li>
-                            <li><a href="#">ANGEL CLUB</a></li>
-                            <li><a href="accessories.html">ACCESORIES</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="collections.html">Collections</a></li>
+                            <li><a href="angel-club.html">Angel Club</a></li>
+                            <li><a href="about.html">About Us</a></li>
                         </ul>
                     </div>
+
+                    <!-- Customer Service Section -->
                     <div class="footer-column">
                         <h4>Customer Service</h4>
                         <ul>
                             <li><a href="contact-us.html">Contact Us</a></li>
                             <li><a href="shipping-returns.html">Shipping & Returns</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Track Order</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="track-order.html">Track Order</a></li>
                         </ul>
                     </div>
+
+                    <!-- Follow Us Section -->
                     <div class="footer-column">
                         <h4>Follow Us</h4>
                         <div class="social-icons">
-                            <a href="#"><img src="images/fb.avif" alt="Facebook"></a>
-                            <a href="#"><img src="images/insta.jpeg" alt="Instagram"></a>
-                            <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Footer Bottom -->
                 <div class="footer-bottom">
                     <p>&copy; 2025 VELOURA. All rights reserved.</p>
                 </div>
             </footer>
+            <script src="scripts/accessories.js"></script>
 
 </body>
 

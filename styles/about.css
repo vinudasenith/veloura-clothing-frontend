@@ -56,7 +56,7 @@
 
 .about-image img {
     width: 100%;
-    border-radius: 12px;
+    margin-top: 10px;
 }
 
 .about-values {
@@ -80,7 +80,6 @@
 .value-box {
     background: #fff;
     padding: 30px;
-    border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     max-width: 300px;
     flex: 1;

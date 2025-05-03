@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veloura-Home</title>
-    <link rel="stylesheet" href="styles/shipping-returns.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/global.css">
+
 </head>
 
 <body>
     <div class="container-all">
+        <!-- Font Awesome (place in <head>) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
         <!-- Navigation bar first -->
         <nav class="navbar">
             <div class="nav-icon-start">
@@ -51,52 +55,23 @@
             </div>
         </div>
 
-
-        <div class="shipping-topic">
-            <h2>Shipping & Returns</h2>
-            <div class="shipping-returns">
-                <h1>RETURNS / REFUND / EXCHANGE POLICY</h1>
-                <p>At VELOURA, we are committed to ensuring our customers are fully satisfied with their purchases. If
-                    for any reason you are not completely happy with an item, we offer the option to return, refund, or
-                    exchange the product under the following conditions.</p>
-            </div>
-            <div class="shipping-returns-content">
-                <h4>Return and Exchange Eligibility</h4>
-                <p>Items must be returned within 15 days of purchase. To be eligible for a return or exchange, products
-                    must be in a fully resalable condition, including original and undamaged packaging. Items must be
-                    unworn, unwashed, unaltered, and must have their original clothing tags attached.
-
-                    Orders placed using promotional codes are eligible for return unless otherwise stated in the terms
-                    and conditions of the promotion.
-
-                    If a returned product is not in fully resalable condition, VELOURA reserves the right to refuse a
-                    refund or exchange.</p>
-            </div>
-            <div class="non-return">
-                <h4>Non-Returnable Items</h4>
-                <p>Only damaged or faulty goods are eligible for a refund. We are unable to accept returns or exchanges
-                    for items purchased on sale.</p>
-            </div>
-            <div class="refunds">
-                <h4>Refund Policy</h4>
-                <p>Refunds will be issued as store credit to the purchaser’s account. Delivery charges will only be
-                    refunded in cases where the goods received were incorrect, damaged, or faulty.</p>
-            </div>
-            <div class="Delivery">
-                <h4>Delivery charges</h4>
-                <p>The original delivery charge will be refunded only if the product is incorrect, faulty, or damaged.
-                    Delivery charges will not be refunded for unwanted items.</p>
-            </div>
-            <div class="Policy Updates">
-                <h4>Policy Updates</h4>
-                <p>Please note that this policy is subject to change at any time at the discretion of the management of
-                    VELOURA, without prior notice.</p>
-            </div>
-
-
-
-
+        <div class="profile-form-container">
+            <h2 class="form-title">Create Your Veloura Profile</h2>
+            <form id="profileForm" class="profile-form">
+                <div class="form-row">
+                    <input type="text" placeholder="First Name" id="firstName" required>
+                    <input type="text" placeholder="Last Name" id="lastName" required>
+                </div>
+                <input type="tel" placeholder="Phone Number" id="phone" required>
+                <input type="text" placeholder="Address" id="address" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit">Create Profile</button>
+            </form>
         </div>
+
+
         <footer class="site-footer">
             <div class="footer-container">
                 <!-- About Section -->
@@ -147,9 +122,8 @@
             </div>
         </footer>
 
+        <script src="scripts/profile.js"></script>
 
-
-    </div>
 </body>
 
 </html>
