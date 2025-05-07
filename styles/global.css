@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 30px;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
     font-family: 'Poppins', sans-serif;
@@ -30,15 +30,21 @@ body {
 }
 
 .heading1 p {
+    padding-top: 50px;
     font-size: 13px;
     color: #444;
     margin: 0;
 }
 
 .heading1 img {
+    padding-top: 50px;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+}
+
+.heading2 {
+    padding-top: 50px;
 }
 
 /* Center: Shipping Message */
@@ -46,6 +52,7 @@ body {
 
 /* Right: Logo & Brand */
 .heading3 {
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -81,7 +88,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 24px;
+    padding: 30px 24px;
     background-color: #000000;
     border-bottom: 1px solid #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -131,6 +138,61 @@ body {
     color: #fff41e;
     /* Optional: light pink hover */
 }
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-search form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-search input[type="text"] {
+    width: 180px;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-search input[type="text"]:focus {
+    border-color: #000;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-search button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.nav-search button:hover {
+    background-color: #eee;
+}
+
+.nav-search i {
+    color: #333;
+    font-size: 16px;
+}
+
+
 
 /* Footer Section Styles */
 .site-footer {
